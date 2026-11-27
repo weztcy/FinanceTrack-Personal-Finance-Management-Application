@@ -1,0 +1,35 @@
+# Environment
+.env
+.env*.local
+backend/.env
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build & Cache
+dist/
+frontend/dist/
+*.tsbuildinfo
+
+# Data, DB & Backups
+backend/data/
+*.sqlite*
+backups/
+
+# Testing & Coverage
+coverage/
+test-results/
+playwright-report/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Additional runtime/cache ignores
+.next/
+.venv/
+__pycache__/

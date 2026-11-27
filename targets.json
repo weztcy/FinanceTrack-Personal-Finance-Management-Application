@@ -1,0 +1,203 @@
+{
+  "baseUrl": "http://localhost:4000",
+  "format": "1",
+  "outDir": "screenshots",
+  "cookies": [
+    {
+      "name": "ft_session",
+      "value": "8171742717ed0b62dcec75c2aa9199cedac341e0b11dd0fc9441be3a5f766390",
+      "domain": "localhost",
+      "path": "/"
+    }
+  ],
+  "targets": [
+    {
+      "module": "01-Public",
+      "name": "Layar Masuk (Login)",
+      "route": "/login",
+      "role": "Public",
+      "isOverlay": true,
+      "waitForSelector": ".auth-form, form"
+    },
+    {
+      "module": "01-Public",
+      "name": "Layar Pendaftaran (Register)",
+      "route": "/register",
+      "role": "Public",
+      "isOverlay": true,
+      "waitForSelector": ".auth-form, form"
+    },
+    {
+      "module": "01-Public",
+      "name": "Layar Lupa Kata Sandi",
+      "route": "/forgot-password",
+      "role": "Public",
+      "isOverlay": true,
+      "waitForSelector": ".auth-form, form"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Ringkasan (Dashboard)",
+      "route": "/",
+      "role": "User",
+      "waitForSelector": ".page-heading, .stat-grid"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Ringkasan: Modal Catat Transaksi",
+      "route": "/",
+      "role": "User",
+      "clickSelector": "button:has-text('Catat transaksi')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Transaksi",
+      "route": "/transactions",
+      "role": "User",
+      "waitForSelector": "table tbody tr, .transaction-panel, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Rekening",
+      "route": "/accounts",
+      "role": "User",
+      "waitForSelector": ".account-summary, .entity-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Rekening: Modal Tambah Rekening",
+      "route": "/accounts",
+      "role": "User",
+      "clickSelector": "button:has-text('Tambah rekening')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Anggaran",
+      "route": "/budgets",
+      "role": "User",
+      "waitForSelector": ".budget-summary, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Anggaran: Modal Buat Anggaran",
+      "route": "/budgets",
+      "role": "User",
+      "clickSelector": "button:has-text('Buat anggaran')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Target Tabungan",
+      "route": "/goals",
+      "role": "User",
+      "waitForSelector": ".goal-explanation, .entity-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Target: Modal Buat Target Tabungan",
+      "route": "/goals",
+      "role": "User",
+      "clickSelector": "button:has-text('Buat target')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Tagihan (Tab Belum Dibayar)",
+      "route": "/bills",
+      "role": "User",
+      "waitForSelector": ".tabs, .entity-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Tab Tagihan: Sudah Dibayar",
+      "route": "/bills",
+      "role": "User",
+      "tabSelector": "button:has-text('Sudah dibayar')",
+      "waitForSelector": ".tabs, .entity-grid, .panel, .empty"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Tab Tagihan: Semua Tagihan",
+      "route": "/bills",
+      "role": "User",
+      "tabSelector": "button:has-text('Semua tagihan')",
+      "waitForSelector": ".tabs, .entity-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Tagihan: Modal Tambah Tagihan",
+      "route": "/bills",
+      "role": "User",
+      "clickSelector": "button:has-text('Tambah tagihan')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Transaksi Berulang",
+      "route": "/recurring",
+      "role": "User",
+      "waitForSelector": ".entity-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Berulang: Modal Buat Jadwal",
+      "route": "/recurring",
+      "role": "User",
+      "clickSelector": "button:has-text('Buat jadwal')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Laporan",
+      "route": "/reports",
+      "role": "User",
+      "waitForSelector": ".report-stats, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu Sekunder: Kategori",
+      "route": "/categories",
+      "role": "User",
+      "waitForSelector": ".two-column, .category-list, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Aksi Kategori: Modal Tambah Kategori",
+      "route": "/categories",
+      "role": "User",
+      "clickSelector": "button:has-text('Tambah kategori')",
+      "waitForSelector": "dialog[open], .modal, form",
+      "isOverlay": true
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu Sekunder: Pengaturan",
+      "route": "/settings",
+      "role": "User",
+      "waitForSelector": ".settings-grid, .panel"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Menu: Notifikasi (Tab Semua)",
+      "route": "/notifications",
+      "role": "User",
+      "waitForSelector": ".tabs, .panel, .page"
+    },
+    {
+      "module": "02-User-Portal",
+      "name": "Tab Notifikasi: Belum Dibaca",
+      "route": "/notifications",
+      "role": "User",
+      "tabSelector": "button:has-text('Belum dibaca')",
+      "waitForSelector": ".tabs, .panel, .page"
+    }
+  ]
+}
